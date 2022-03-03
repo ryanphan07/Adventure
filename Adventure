@@ -22,6 +22,23 @@ void plot (){
     plot.plotting();
 }
 
+void roadMapFunction(){
+    
+    printf("Option 1 will lead to the middle where they walk to the store normally.\n");
+    printf("Option 2 will lead to the middle where they hop to the store, but being told to leave by the store manager.\n");
+    printf("Option 3 will lead to the middle where they crawl to the store, everyone following them, and then the store catching on fire.\n");
+    printf("Choosing option 1, then option 1 will lead to them buying milk, going home, drinking it, and then going to sleep.\n");
+    printf("Choosing option 1, then option 2 will lead to the not seeing milk at first, having a temporary mental breakdown, finding milk, buying it, going home, drinking it, and then going to sleep.\n");
+    printf("Choosing option 1, then option 3 will lead to them going to the bathroom, forgetting to buy milk, going home, having a mental breakdown, and then going to sleep.\n");
+    printf("Choosing option 2, then option 1 will lead to them quickly getting the milk, buying it, going home, and then sleeping.\n");
+    printf("Choosing option 2, then option 2 will lead to them becoming friends with the manager, getting milk, getting money from other customers by performing, buying the milk with their new earned money, going home, drinking the milk, and then going to sleep.\n");
+    printf("Choosing option 2, then option 3 will lead to them driving home, having a mental breakdown, applying and getting a bunny caretaker job, getting an unlimited supply of milk, and then going to sleep.\n");
+    printf("Choosing option 3, then option 1 will lead to one of them getting caught in the fire, panicking, putting out the fire with water, buying milk, going home, sleeping, and then getting burnt by the fire which spread to their houses.\n");
+    printf("Choosing option 3, then option 2 will lead to them leading the people out of the fire, being awarded a Nobel Peace Prize, one of them getting kicked off a cliff, and the other getting an unlimited supply of milk. \n");
+    printf("Choosing option 3, then option 3 will lead to them crawling around the fire, creating a tornado that puts out the fire, one of them getting blown away to an island with milk, and the other not being seen ever again. \n");
+    
+}
+
 int main () 
 {
     
@@ -43,18 +60,7 @@ int main ()
     scanf("%i", &roadMap);
 
     if (roadMap == 1){
-    printf("Option 1 will lead to the middle where they walk to the store normally.\n");
-    printf("Option 2 will lead to the middle where they hop to the store, but being told to leave by the store manager.\n");
-    printf("Option 3 will lead to the middle where they crawl to the store, everyone following them, and then the store catching on fire.\n");
-    printf("Choosing option 1, then option 1 will lead to them buying milk, going home, drinking it, and then going to sleep.\n");
-    printf("Choosing option 1, then option 2 will lead to the not seeing milk at first, having a temporary mental breakdown, finding milk, buying it, going home, drinking it, and then going to sleep.\n");
-    printf("Choosing option 1, then option 3 will lead to them going to the bathroom, forgetting to buy milk, going home, having a mental breakdown, and then going to sleep.\n");
-    printf("Choosing option 2, then option 1 will lead to them quickly getting the milk, buying it, going home, and then sleeping.\n");
-    printf("Choosing option 2, then option 2 will lead to them becoming friends with the manager, getting milk, getting money from other customers by performing, buying the milk with their new earned money, going home, drinking the milk, and then going to sleep.\n");
-    printf("Choosing option 2, then option 3 will lead to them driving home, having a mental breakdown, applying and getting a bunny caretaker job, getting an unlimited supply of milk, and then going to sleep.\n");
-    printf("Choosing option 3, then option 1 will lead to one of them getting caught in the fire, panicking, putting out the fire with water, buying milk, going home, sleeping, and then getting burnt by the fire which spread to their houses.\n");
-    printf("Choosing option 3, then option 2 will lead to them leading the people out of the fire, being awarded a Nobel Peace Prize, one of them getting kicked off a cliff, and the other getting an unlimited supply of milk. \n");
-    printf("Choosing option 3, then option 3 will lead to them crawling around the fire, creating a tornado that puts out the fire, one of them getting blown away to an island with milk, and the other not being seen ever again. \n");
+        roadMapFunction();
     }
 
 
