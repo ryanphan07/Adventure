@@ -111,7 +111,7 @@ int main ()
                     exit(1);
                 //End 3
                 case'3' :
-                    printf("The two neighbors do their business in the bathroom. %s finishes first, and does jumping jcaks outside while waiting. They both go home. When they reach their houses, they suddently remember they forgot to buy milk. %s gets sad and starts crying. %s also gets sad and cries with %s. They drink water and go to sleep. They will buy milk in another adventure tomorrow.\n", person_1, person_2, person_1, person_2);
+                    printf("The two neighbors do their business in the bathroom. %s finishes first, and does jumping jacks outside while waiting. They both go home. When they reach their houses, they suddently remember they forgot to buy milk. %s gets sad and starts crying. %s also gets sad and cries with %s. They drink water and go to sleep. They will buy milk in another adventure tomorrow.\n", person_1, person_2, person_1, person_2);
                     x=0;
                     a=0;
                     plot ();
@@ -196,7 +196,7 @@ int main ()
                         exit(1);
                     case'3' :
                         //End 9
-                        printf("People follow their lead and crawl aroudn the fire too. They all crawl so quickly that they create a tornado. The tornado puts the fire out. However, the tornado is so powerful that it destroys all of North and South America. As a result, all of the milk cartons there are destroyed. While getting swept away, %s is sad they might not be able to drink milk ever again. Luckily, the tornado lands %s on a deserted island near Greece, and a milk carton lands right in their land. They drink milk. They got to sleep. %s, on the other hand, is never to be seen again.\n", person_1, person_1, person_2);
+                        printf("People follow their lead and crawl around the fire too. They all crawl so quickly that they create a tornado. The tornado puts the fire out. However, the tornado is so powerful that it destroys all of North and South America. As a result, all of the milk cartons there are destroyed. While getting swept away, %s is sad they might not be able to drink milk ever again. Luckily, the tornado lands %s on a deserted island near Greece, and a milk carton lands right in their land. They drink milk. They got to sleep. %s, on the other hand, is never to be seen again.\n", person_1, person_1, person_2);
                         x=0;
                         c=0;
                         plot ();
