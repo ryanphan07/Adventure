@@ -2,7 +2,7 @@
 #include <chplot.h>
 
 void plot (){
-    
+    sleep(5);
     CPlot plot;
     plot.title("");
     plot.label(PLOT_AXIS_X, "x");
@@ -18,6 +18,10 @@ void plot (){
     plot.line(9.5, 20, 9.5, 25);
     plot.line(9.5, 20, 11.5, 22);
     plot.circle(11.2, 30, 2);
+    plot.line(6, 0, 6, -10);
+    plot.line(8, 0, 8, -10);
+    plot.line(10, 5, 12, 10);
+    plot.line(5, 5, 3, 10);
     plot.text("The end.", PLOT_TEXT_CENTER, 11.2, 30);
     plot.plotting();
 }
@@ -51,6 +55,8 @@ int main ()
     int roadMap = 0;
     int rand1 = randint(1, 60);
     int rand2 = randint(15, 30);
+    int rand3 = randint(1, 60);
+    int rand4 = randint(1, 12);
     int x = 1;
     int a = 1;
     int b = 1;
@@ -71,7 +77,7 @@ int main ()
         
 
     //Introduction
-    printf("It is a bright and sunny day. %s goes to their refrigerator and sees that they’re out of milk. Their neighbor, %s, needs milk too. The two decide to go to the store to buy some. They both drive there. They arrive there. They park in the parking lot.\n", person_1, person_2);
+    printf("It is a bright and sunny day. %s looks at the clock and sees that it is %i:%i. %s goes to their refrigerator and sees that they’re out of milk. Their neighbor, %s, needs milk too. The two decide to go to the store to buy some. They both drive there. They arrive there. They park in the parking lot.\n", person_1, rand4, rand3, person_1, person_2);
     //Option 1
     printf("Option 1: They walk out of the car normally. \n");
     //Option 2
@@ -96,37 +102,37 @@ int main ()
                 //Option 3
                 printf("Option 3: They go to the restroom.\n");
                 while (a==1){
-                printf("Please select an option (1, 2, or 3)\n");
-                scanf("%s", &option_2);
-                    
-                switch(option_2) {
+                    printf("Please select an option (1, 2, or 3)\n");
+                    scanf("%s", &option_2);
+                        
+                    switch(option_2) {
 
-                case'1' :
-                //End 1
-                    printf("They find milk. They buy the milk. %s buys an extra carton of chocolate milk too. %s decides to buy some eggs while at the store. They go home. They drink milk together. %s goes to sleep. %s watches %s sleep.\n", person_1, person_2, person_1, person_2, person_1);
+                    case'1' :
+                    //End 1
+                        printf("They find milk. They buy the milk. %s buys an extra carton of chocolate milk too. %s decides to buy some eggs while at the store. They go home. They drink milk together. %s goes to sleep. %s watches %s sleep.\n", person_1, person_2, person_1, person_2, person_1);
+                        x=0;
+                        a=0;
+                        plot ();
+                        exit(1);  
+                    //End 2
+                    case'2' :
+                        printf("%s doesn't see any milk. %s goes to a corner and cries. %s tries to comfort %s. While %s is crying, they suddently see the dairy section. %s gets the carton of milk. %s then steals the carton of milk from %s's hand. %s has to get another carton of milk. They buy the milk. They go home. They drink milk together. %s goes to their house and goes to sleep. %s drinks another cup of milk and goes to sleep.\n", person_1, person_1, person_2, person_1, person_1, person_1, person_2, person_1, person_1, person_2, person_1);
+                        x=0;
+                        a=0;
+                        plot ();
+                        exit(1);
+                    //End 3
+                    case'3' :
+                        printf("The two neighbors do their business in the bathroom. %s finishes first, and does jumping jacks outside while waiting. They both go home. When they reach their houses, they suddently remember they forgot to buy milk. %s gets sad and starts crying. %s also gets sad and cries with %s. They drink water and go to sleep. They will buy milk in another adventure tomorrow.\n", person_1, person_2, person_1, person_2);
+                        x=0;
+                        a=0;
+                        plot ();
+                        exit(1);
+                    default :  
+                        printf("Please enter a valid input.\n");
+                        break;
+                        }
                     x=0;
-                    a=0;
-                    plot ();
-                    exit(1);  
-                //End 2
-                case'2' :
-                    printf("%s doesn't see any milk. %s goes to a corner and cries. %s tries to comfort %s. While %s is crying, they suddently see the dairy section. %s gets the carton of milk. %s then steals the carton of milk from %s's hand. %s has to get another carton of milk. They buy the milk. They go home. They drink milk together. %s goes to their house and goes to sleep. %s drinks another cup of milk and goes to sleep.\n", person_1, person_1, person_2, person_1, person_1, person_1, person_2, person_1, person_1, person_2, person_1);
-                    x=0;
-                    a=0;
-                    plot ();
-                    exit(1);
-                //End 3
-                case'3' :
-                    printf("The two neighbors do their business in the bathroom. %s finishes first, and does jumping jacks outside while waiting. They both go home. When they reach their houses, they suddently remember they forgot to buy milk. %s gets sad and starts crying. %s also gets sad and cries with %s. They drink water and go to sleep. They will buy milk in another adventure tomorrow.\n", person_1, person_2, person_1, person_2);
-                    x=0;
-                    a=0;
-                    plot ();
-                    exit(1);
-                default :  
-                    printf("Please enter a valid input.\n");
-                    break;
-                    }
-                x=0;
                 }
             case'2' :
                 //Middle 2
@@ -195,7 +201,7 @@ int main ()
                         exit(1);
                     case'2' :
                         //End 8
-                        printf("Everyone manages to get out of the building safely. They are awarded the Nobel Peace Prize for their leadership. They get an unlmiited supply of milk. %s gets so happy they start breakdancing again. Unfortunately, they accidentally kick %s while breakdancing who falls down off of the cliff they were standing on. %s moves on with their life and goes home. They drink milk. They go to sleep.\n", person_1, person_2, person_1);
+                        printf("Everyone manages to get out of the building safely. They are awarded the Nobel Peace Prize for their leadership. They get an unlimited supply of milk. %s gets so happy they start breakdancing again. Unfortunately, they accidentally kick %s while breakdancing who falls down off of the cliff they were standing on. %s moves on with their life and goes home. They drink milk. They go to sleep.\n", person_1, person_2, person_1);
                         x=0;
                         c=0;
                         plot ();
@@ -223,4 +229,3 @@ int main ()
     return 0;
         
 }
-
